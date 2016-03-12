@@ -49,10 +49,10 @@ a:hover, a:focus {
     font-size: 4.9em;
     font-family: Roboto;
     font-weight: 100;
-    margin-top: 9%;
+    margin-top: 0px;;
 }
 .titleLogo {
-    margin-top: -11%;
+    margin-top: 9%;
     color:#116687;
     font-size: 2.6em;
 }
@@ -60,7 +60,7 @@ a:hover, a:focus {
     color:#ff4c4c;
 }
 .titleTag {
-    margin-top: 105px;
+    margin-top: 10px;
     font-size: 1.7em;
     font-weight: 4;
     opacity: 0.5;
