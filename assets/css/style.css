@@ -630,10 +630,21 @@ label {
     padding-bottom: 92.5%
 }
 .lobbyTitle {
+    font-size:4em;
+    margin-top: 30px;
     font-family: "Roboto";
-    margin-left: 35%;
-    margin-top: 5%;
+    text-align: center;
     font-weight: 100;
+}
+.lobbyStatus {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top:20px;
+}
+.lobbyStatus span {
+    color:#ff4c4c;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 
