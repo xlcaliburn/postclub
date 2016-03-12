@@ -618,6 +618,29 @@ label {
 @media screen and (max-width: 768px) {
 	#features {display: none;}
 }
+/*	LOBBY STYLE
+	==================================================*/ 
+.lobby {
+    background-color:#d0d0d0;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 0;
+    width: 50%;
+    height: 90%
+}
+.lobbyTitle {
+    font-family: "Roboto";
+    margin-left: 35%;
+    margin-top: 5%;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
 
 /*	Responsive
 	==================================================*/ 
