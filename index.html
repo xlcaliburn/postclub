@@ -155,8 +155,7 @@
 				selectable: true,
 				selectHelper: true,
 				select: function(start, end) {
-					var title = prompt('Event Title:');
-					var eventData;
+					$("#myModal").modal();
 					if (title) {
 						eventData = {
 							title: title,
@@ -164,6 +163,7 @@
 							end: end
 						};
 						$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+                        
 					}
 					$('#calendar').fullCalendar('unselect');
 				},
@@ -175,6 +175,26 @@
 			});
 			
 		});
-	</script>	
+	</script>
+        <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">New Event</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 	</body>
 </html>
