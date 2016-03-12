@@ -18,6 +18,9 @@
 		<script src='Calendar/lib/moment.min.js'></script>
 		<script src='Calendar/lib/jquery.min.js'></script>
 		<script src='Calendar/fullcalendar.min.js'></script>
+
+		<script src="assets/js/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+		<link href="assets/js/bootstrap-timepicker/css/bootstrap-timepicker.min.js" />
 		<style>
 			body {
 				margin: 40px 10px;
@@ -95,11 +98,89 @@
 			</div>
 		</div>
 	</section>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog" role="document">
+	    <div class="modal-content">
+			<div class="tabbable">
+					<div class="tab-content">
+					<div class="tab-pane active" id="tab1">
+						<div class="modal-header">
+							Event details
+						</div>
+						<div class="modal-body">
+								<label class="">Start time:</label>
+
+						        <div class="bootstrap-timepicker">
+						            <input id="startTime" type="text" class="input-small">
+						            <i class="icon-time"></i>
+						        </div>
+						        <br>
+								<label  class="control-label">End Time:</label>
+
+						        <div class="bootstrap-timepicker">
+						            <input id="endTime" type="text" class="input-small">
+						            <i class="icon-time"></i>
+						        </div>
+								
+														        <br>
+								<label  class="control-label">Search distance (km):</label><br>
+								<input />
+
+
+					        <script type="text/javascript">
+					            $('#startTime').timepicker({
+					                template: false,
+					                showInputs: false,
+					                minuteStep: 5
+					            });
+							
+							  $('#endTime').timepicker({
+					                template: false,
+					                showInputs: false,
+					                minuteStep: 5
+					            });
+					        </script>
+
+					        <style>
+								.modal-body{
+									text-align: left;
+								    width: 100%;
+								}
+							</style>
+
+							</p>
+						</div>
+						<div class="modal-footer">
+							<a href="#tab2" data-toggle="tab" class="pull-right btn btn-default">Next ></a>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab2">
+						<div class="modal-header">
+							Category selection
+						</div>
+						<div class="modal-body">
+							<p>Howdy, I'm in Section 2.</p>
+						</div>
+
+						<div class="modal-footer">
+							<a href="#tab1" data-toggle="tab" class="pull-left btn btn-default">< Prev</a>
+							<a href="#" data-toggle="tab" class="pull-right btn btn-primary">Submit</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 	<!-- ================================================== 
 	End Hero -->
 	<!-- Start Hero 2 Section
-	=======================================================
-	<section id="features" class="section" style="background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
+	=======================================================-->
+<!-- 	<section id="features" class="section" style="background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="banner2">
@@ -109,14 +190,14 @@
 						</div>
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="preback">
-								<h1 class="infoTitle">Meet <span>New</span> Friends</h1>>
+								<h1 class="infoTitle">Meet <span>New</span> Friends</h1>
 							</div>
 						</div>								
 					</div>	
 				</div>
 			</div>	
 		</div>
-	</section>
+	</section> -->
 	<!-- ==================================================
 	End Hero 2 -->
 		
@@ -131,6 +212,17 @@
 	</section>
 	<!-- ==================================================
 	End Hero 2 -->
+	
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.scrollto.min.js"></script>
+	<script src="assets/js/jquery.localscroll.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
 	<script>
 		$(document).ready(function() {
 			
@@ -144,10 +236,18 @@
 				selectable: true,
 				selectHelper: true,
 				select: function(start, end) {
-                    $("#myModal").modal();
-						
+
+					$('#exampleModal').modal();
+					var title = '';//prompt('Event Title:');
+					var eventData;
+					if (title) {
+						eventData = {
+							title: title,
+							start: start,
+							end: end
+						};
 						$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-					
+					}
 					$('#calendar').fullCalendar('unselect');
 				},
 				editable: true,
@@ -158,36 +258,6 @@
 			});
 			
 		});
-	</script>
-        <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">New Event</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="assets/js/bootstrap.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
-	<script src="assets/js/jquery.scrollto.min.js"></script>
-	<script src="assets/js/jquery.localscroll.min.js"></script>
-	<script src="assets/js/jquery.prettyPhoto.js"></script>
-	<script src="assets/js/scripts.js"></script>
-
+	</script>	
 	</body>
 </html>
