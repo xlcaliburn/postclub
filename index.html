@@ -99,17 +99,17 @@
 	End Hero -->
 	<!-- Start Hero 2 Section
 	=======================================================-->
-	<!--<section id="features" class="section" style="background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
+	<section id="features" class="section" style="background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="banner2">
 					<div class="col-md-12 col-sm-12 col-xs-12">
 						<div class="Hero2">
-							<!--<img src="assets\images\golf.jpg">-->
-						<!--</div>
+							<img src="assets\images\golf.jpg">-->
+						</div>
 						<div class="col-md-12 col-sm-12 col-xs-12">
-							<!--<div class="preback">
-								<!--<h1 class="infoTitle">Meet <span>New</span> Friends</h1>-->
+							<div class="preback">
+								<h1 class="infoTitle">Meet <span>New</span> Friends</h1>-->
 							</div>
 						</div>								
 					</div>	
@@ -122,7 +122,7 @@
 		
 	<!-- Start Hero 2 Section
 	=======================================================-->
-	<!--<section id="moreFeatures" class="section" style="background-color:#ffcccc; border-top: 1px solid rgba(0, 0, 0, .1);">
+	<section id="moreFeatures" class="section" style="background-color:#ffcccc; border-top: 1px solid rgba(0, 0, 0, .1);">
 		<div class="container-fluid">
 			<div class="row">
 				
@@ -155,16 +155,10 @@
 				selectable: true,
 				selectHelper: true,
 				select: function(start, end) {
-					$("#myModal").modal();
-					if (title) {
-						eventData = {
-							title: title,
-							start: start,
-							end: end
-						};
+                    $("#myModal").modal();
+						
 						$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-                        
-					}
+					
 					$('#calendar').fullCalendar('unselect');
 				},
 				editable: true,
