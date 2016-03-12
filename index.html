@@ -1,59 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	    <!-- Meta, title, CSS, favicons, etc. -->
-	    <meta charset="utf-8">
+		<!-- Meta, title, CSS, favicons, etc. -->
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
 	
 		<title>
 		  
-		    PostClub
+			PostClub
 		  
 		</title>
-	    <!--Calender-->
-        <link href='calender/fullcalendar.css' rel='stylesheet' />
-<link href='calender/fullcalendar.print.css' rel='stylesheet' media='print' />
-<script src='calender/lib/moment.min.js'></script>
-<script src='calender/lib/jquery.min.js'></script>
-<script src='calender/fullcalendar.min.js'></script>
-<script>
-
-	$(document).ready(function() {
-		
-		$('#calendar').fullCalendar({
-			header: {
-				left: 'prev',
-				center: 'title',
-				right: 'next'
-			},
-			defaultDate: '2016-01-12',
-			selectable: true,
-			selectHelper: true,
-			select: function(start, end) {
-				var title = prompt('Event Title:');
-				var eventData;
-				if (title) {
-					eventData = {
-						title: title,
-						start: start,
-						end: end
-					};
-					$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-				}
-				$('#calendar').fullCalendar('unselect');
-			},
-			editable: true,
-			eventLimit: true, // allow "more" link when too many events
-			events: [
-				
-			]
-		});
-		
-	});
-
-</script>
+		<!--Calendar-->
+		<link href='Calendar/fullcalendar.css' rel='stylesheet' />
+		<link href='Calendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+		<script src='Calendar/lib/moment.min.js'></script>
+		<script src='Calendar/lib/jquery.min.js'></script>
+		<script src='Calendar/fullcalendar.min.js'></script>
 <style>
 
 	body {
@@ -65,11 +29,11 @@
 
 	#calendar {
 		max-width: 800px;
-        margin-top: 140px;
+		margin-top: 140px;
 	}
 
 </style>
-               
+			   
 		<!-- Bootstrap core CSS -->
 		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 		
@@ -91,33 +55,33 @@
 	================================================== -->
 	<header id="header" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
 	  <div class="container-fluid" id="navfluid">
-	    <div class="navbar-header">
-	      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <!-- Your Logo -->
-	      <a href="" class="navbar-brand">Post<span>Club</span></a>
-	    </div>
-	    <!-- Start Navigation -->
-	    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-	      <ul class="nav navbar-nav">
-	        <li>
-	          <a href="#face">Calender</a>
-	        </li>
-	        <li>
-	          <a href="#features">Information</a>
-	        </li>
-	        <li>
-	          <a href="#personal">Preferences</a>
-	        </li>
-	        <li>
-	          <a href="#signout">Signout</a>
-	        </li>
-	      </ul>
-	    </nav>
+		<div class="navbar-header">
+		  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <!-- Your Logo -->
+		  <a href="" class="navbar-brand">Post<span>Club</span></a>
+		</div>
+		<!-- Start Navigation -->
+		<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+		  <ul class="nav navbar-nav">
+			<li>
+			  <a href="#face">Calendar</a>
+			</li>
+			<li>
+			  <a href="#features">Information</a>
+			</li>
+			<li>
+			  <a href="#personal">Preferences</a>
+			</li>
+			<li>
+			  <a href="#signout">Signout</a>
+			</li>
+		  </ul>
+		</nav>
 	  </div>
 	</header>
 	<!-- ==================================================
@@ -158,15 +122,15 @@
 	</section>
 	<!-- ==================================================
 	End Hero 2 -->
-        
-    <!-- Start Hero 2 Section
+		
+	<!-- Start Hero 2 Section
 	=======================================================-->
 	<section id="moreFeatures" class="section" style="background-color:#ffcccc; border-top: 1px solid rgba(0, 0, 0, .1);">
 		<div class="container-fluid">
 			<div class="row">
 				
-		    </div>
-        </div>
+			</div>
+		</div>
 	</section>
 	<!-- ==================================================
 	End Hero 2 -->
@@ -180,6 +144,43 @@
 	<script src="assets/js/jquery.localscroll.min.js"></script>
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/scripts.js"></script>
+
+	<script>
+
+		$(document).ready(function() {
+			
+			$('#calendar').fullCalendar({
+				header: {
+					left: 'prev',
+					center: 'title',
+					right: 'next'
+				},
+				defaultDate: '2016-01-12',
+				selectable: true,
+				selectHelper: true,
+				select: function(start, end) {
+					var title = prompt('Event Title:');
+					var eventData;
+					if (title) {
+						eventData = {
+							title: title,
+							start: start,
+							end: end
+						};
+						$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+					}
+					$('#calendar').fullCalendar('unselect');
+				},
+				editable: true,
+				eventLimit: true, // allow "more" link when too many events
+				events: [
+					
+				]
+			});
+			
+		});
+
+	</script>	
 	
 	
 	<!-- ********************* -->
