@@ -83,7 +83,7 @@ pre {
 /*	Section
 	==================================================*/
 .section {
-	padding:20px 0;
+	/*padding:20px 0;*/
 	height: 100%;
 }
 .active-section {
@@ -491,8 +491,7 @@ label {
 	==================================================*/
 
 .fornow {
-    padding-bottom: 400px;
-    padding-top: 300px;
+  margin-top: 500px;
 }
 
 .Hero2 img {
@@ -537,10 +536,10 @@ label {
 	background-color: #116687;
 	width: 100%;
 	max-width: inherit;
-	height: 500px;
+	height: 300px;
 	margin-left: -15px;
 	z-index: 1000;
-	opacity: 0.8;
+	opacity: 0.4;
 	bottom: 0%;
 	position: absolute;
 }
@@ -1644,8 +1643,8 @@ margin-right: 27px;
 	margin-left: -105px;
 }
 #face {
-	background: radial-gradient(circle, white, lightgrey);
-	padding-top: 80px;
+	/*background: radial-gradient(circle, white, #86dbfc);*/
+	height:103.5vh;
 }
 
 /*	Responsive
