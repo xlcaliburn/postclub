@@ -1,7 +1,6 @@
 body {
 	color: #2c3e50;
-	font: normal 16px  "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 300;
+	font: 16px  "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-color: #fff;
 	overflow-x: hidden;
 	line-height: 1.5;
@@ -26,7 +25,6 @@ a:hover, a:focus {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 400;
 	margin-bottom: 15px;
 	margin-top: 0;
 }
@@ -92,7 +90,6 @@ pre {
 .navbar.active-section {
 	top: 0 !important;
 }
-
 /*	Button & Label
 	==================================================*/
 /*.alert {
@@ -533,17 +530,34 @@ label {
 	.Hero22 {hero22: 250px;}
 }
 .preback {
-	background-color: #116687;
+	background-color: transparent;
 	width: 100%;
 	max-width: inherit;
 	height: 300px;
 	margin-left: -15px;
 	z-index: 1000;
-	opacity: 0.4;
 	bottom: 0%;
 	position: absolute;
 }
-
+.infoTitle {
+    font-family: "Roboto";
+    font-size: 8em;
+    padding-left: 50px;
+    padding-top: 120px;
+}
+.infoTitle span {
+    color:#ff4c4c;
+}
+.subinfo {
+    padding: 100px;
+    font-size: 4em;
+    font-weight: 500;
+}
+.subinfoinfo {
+    padding: 50px;
+    font-size: 2em;
+    font-weight: 100;
+}
 .overview .herocolor {
 	color: white;
 	margin-left: 105px;

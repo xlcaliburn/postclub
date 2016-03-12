@@ -36,7 +36,7 @@ body .fc { /* extra precedence to overcome jqui */
 .fc-unthemed .fc-divider,
 .fc-unthemed .fc-row,
 .fc-unthemed .fc-popover {
-	border-color: white;
+	border-color: #f7f7f7;
 }
 
 .fc-unthemed .fc-popover {
