@@ -1,0 +1,74 @@
+body {
+	color: #2f464e;
+	font: normal 16px  "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	background-color: #fff;
+	overflow-x: hidden;
+	line-height: 1.5;
+	height: 100%;
+}
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+a {
+	color: #333333;
+	cursor: pointer;
+	text-decoration: none;
+	
+	-moz-transition: all .2s;
+	-o-transition: all .2s;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+a:hover, a:focus {
+	color: #e60000;
+	outline: none;
+	text-decoration: none;
+}
+.titlePhrase {
+    font-size: 4.9em;
+    font-family: Roboto;
+    font-weight: 100;
+    margin-top: 9%;
+}
+.titleLogo {
+    margin-top: -11%;
+    color:#116687;
+    font-size: 2.6em;
+}
+.titleLogo span {
+    color:#ff4c4c;
+}
+.titleTag {
+    margin-top: 105px;
+    font-size: 1.7em;
+    font-weight: 4;
+    opacity: 0.5;
+}
+.loginFoot {
+    font-weight: 50;
+    opacity: 0.5;
+}
+#footer {
+    
+}
