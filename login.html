@@ -40,15 +40,29 @@
 		<link rel="shortcut icon" href="../assets/favicon.png">
 	</head>
     <body>
-        <div id="wrapper">
+
+    	<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=318481674941601";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+
             <div id="header"></div>
             <div id="body"></div>
-            <center><h1 class="titleLogo">Post<span>Club</span></h1></center>
-            <center><h1 class="titlePhrase">Let's Meet Up?</h1></center>
-            <center><p class="titleTag">Pick a date | Make plans | Live life</p></center>
-            <div id="footer">   
-                <center><p class="loginFoot">Created by <strong>Jae</strong> <strong>Bryce</strong> and <strong>Michael</strong></p></center>
-            </div>
+            <center><h1 class="titleLogo">Post<span>Club</span></h1>
+            <h1 class="titlePhrase">Let's Meet Up?</h1>
+            	<p class="titleTag">Pick a date | Make plans | Live life</p>
+            	<br>
+         		<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+
+            </center>
+
+        <div id="footer">   
+            <center><p class="loginFoot">Created by <strong>Jae</strong>, <strong>Bryce</strong> and <strong>Michael</strong></p></center>
         </div>
     </body>
 </html>
