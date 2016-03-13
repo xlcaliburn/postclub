@@ -49,7 +49,7 @@
 		<link rel="shortcut icon" href="../assets/favicon.png">
 
 		
-	<script>setTimeout(function(){window.location.href='login.html'},8000);</script>
+	<script>setTimeout(function(){window.location.href='indexEventGroup.html'},8000);</script>
 
 	</head>
 	<body>
@@ -110,7 +110,7 @@
 		});
 	</script>
 
-<div id="footer">   
+	<div id="footer">   
             <center><p class="loginFoot">Created by <strong>Jae</strong>, <strong>Bryce</strong> and <strong>Michael</strong></p></center>
         </div>
 	</body>
