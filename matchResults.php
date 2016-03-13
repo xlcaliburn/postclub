@@ -81,7 +81,7 @@
 			<div class="row">
                 <div class="col-sm-12">
                     <div class="profiles">
-                        <img class="matchProfiles" src="assets/images/Prof1.jpg">
+                        <a href="https://www.facebook.com/charlie.zhang.92?fref=ts"><img class="matchProfiles" src="assets/images/Prof1.jpg"></a>
                         <img class="matchProfiles" src="assets/images/Prof2.jpg">
                         <img class="matchProfiles" src="assets/images/Prof3.jpg">
                         <img class="matchProfiles" src="assets/images/Prof4.jpg">
