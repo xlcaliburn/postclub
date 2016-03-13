@@ -624,7 +624,6 @@ label {
     background-color:#eaeaea;
     position: absolute;
     width: 100%;
-    height: 100vh;
 }
 .lobbyTitle {
     font-size:4em;
