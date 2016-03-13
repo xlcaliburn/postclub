@@ -15,17 +15,10 @@
 		<!-- Start Navigation -->
 		<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
 		  <ul class="nav navbar-nav">
-			<li>
-			  <a href="index.php">Match</a>
-			</li>
-			<li>
-			  <a href="index.php#features">FAQ</a>
-			</li>
-
-		      <li class="dropdown">
-
+		      <li>
 		      <a href="profile.php">Michael</a>
-
+		      </li>
+		    <li><a href="login.html">Logout</a></li>
 		  </ul>
 		</nav>
 	  </div>

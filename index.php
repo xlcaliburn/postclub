@@ -30,7 +30,7 @@
 			}
 			#calendar {
 				max-width: 800px;
-				margin-top: 140px;
+				margin-top: 25px;
 			}
 		</style>
 			   
@@ -62,7 +62,10 @@
 							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="preback">
 									<h1 class="infoTitle">Meet <span>New</span> Friends</h1>
-								<img src="assets\images\golf.jpg">
+									<h3 class="subTitle">Choose a date and time, and we will make your event!</h3>
+								</div>
+								<img style="width:100%; max-height: 350px; opacity: 0.8;" src="assets\images\frisbee.png">
+								<div class="bannerTextBack"></div>
 							</div>						
 						</div>	
 					</div>
@@ -70,7 +73,7 @@
 			</div>
 		</section>
 		
-		<section id="face" class="section" style="margin-top: 150px; background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
+		<section id="face" class="section" style="background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-sm-12 col-xs-12">
@@ -148,17 +151,17 @@
 									</div>
 								</p>
 
-	<script>
-	$(function () {
-	  $(".categoryLogo").click(function() {
-	    $(this).css('border', "solid 2px red");  
-	  });
-	});
-	</script>
+							<script>
+							$(function () {
+							  $(".categoryLogo").click(function() {
+							    $(this).css('border', "solid 2px red");  
+							  });
+							});
+							</script>
 
 							</div>
 
-							<div class="modal-footer">
+							<div class="modal-footer">	
 								<a href="#tab1" data-toggle="tab" class="pull-left btn btn-default">< Prev</a>
 								<a href="indexQueue.php" class="pull-right btn btn-primary">Submit</a>
 							</div>
@@ -215,5 +218,9 @@
 				
 			});
 		</script>	
+
+		        <div id="footer">   
+            <center><p class="loginFoot">Created by <strong>Jae</strong>, <strong>Bryce</strong> and <strong>Michael</strong></p></center>
+        </div>
 	</body>
 </html>

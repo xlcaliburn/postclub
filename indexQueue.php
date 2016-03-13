@@ -47,6 +47,10 @@
 		
 		<!-- Favicons -->
 		<link rel="shortcut icon" href="../assets/favicon.png">
+
+		
+	<script>setTimeout(function(){window.location.href='login.html'},8000);</script>
+
 	</head>
 	<body>
 	
@@ -60,11 +64,11 @@
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="lobby">
                         <h1 class="lobbyTitle">Event Queue</h1>
-                        <h2 class="lobbyD1">Date: <br/><span>March 13th</span></h2>
-                        <h2 class="lobbyD">Event Time: <br/><span>3:00 - 7:00</span></h2>
-                        <h2 class="lobbyD">Distance: <br/><span>5km</span></h2>
-                        <h2 class="lobbyD">Category: <br/><span>Outdoor - Active</span></h2>
-                        <h2 class="lobbyStatus">Looking for<span> 7 </span> more people...</h2>
+                        <h3 class="lobbyD1">Date: <br/><span>Jan 15th</span></h3>
+                        <h3 class="lobbyD">Time Range: <br/><span>15:00 - 19:00</span></h3>
+                        <h3 class="lobbyD">Search: <br/><span>5km</span></h3>
+                        <h3 class="lobbyD">Category: <br/><span>Outdoor - Active</span></h3>
+                        <h2 class="lobbyStatus">Searching . . .</h2>
                     </div>
                 </div>
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -73,54 +77,7 @@
 			</div>
 		</div>
 	</section>
-	<!-- ================================================== 
-	End Hero -->
-	<!-- Start Hero 2 Section
-<<<<<<< adc1eb79e015c1240b44c6b2abf6255b3e428d38
-	=======================================================
-=======
-	=======================================================-
->>>>>>> Took out info for now
-	<section id="features" class="section" style="background-color:#FFF; border-top: 1px solid rgba(0, 0, 0, .1);">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="banner2">
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="Hero2">
-<<<<<<< adc1eb79e015c1240b44c6b2abf6255b3e428d38
-							<img src="assets\images\golf.jpg">
-						</div>
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<div class="preback">
-								<h1 class="infoTitle">Meet <span>New</span> Friends</h1>>
-=======
-							<img src="assets\images\golf.jpg">-
-						</div>
-						<div class="col-md-12 col-sm-12 col-xs-12">
-							<div class="preback">
-								<h1 class="infoTitle">Meet <span>New</span> Friends</h1>
->>>>>>> Took out info for now
-							</div>
-						</div>								
-					</div>	
-				</div>
-			</div>	
-		</div>
-	</section>
-	<!-- ==================================================
-	End Hero 2 -->
-		
-	<!-- Start Hero 2 Section
-	=======================================================
-	<section id="moreFeatures" class="section" style="background-color:#ffcccc; border-top: 1px solid rgba(0, 0, 0, .1);">
-		<div class="container-fluid">
-			<div class="row">
-				
-			</div>
-		</div>
-	</section>
-	<!-- ==================================================
-	End Hero 2 -->
+
 	<script>
 		$(document).ready(function() {
 			
@@ -131,7 +88,7 @@
 					right: 'next'
 				},
 				defaultDate: '2016-01-12',
-				selectable: true,
+				selectable: false,
 				selectHelper: true,
 				select: function(start, end) {
                     $("#myModal").modal();
@@ -143,32 +100,21 @@
 				editable: true,
 				eventLimit: true, // allow "more" link when too many events
 				events: [
-					
+					 {
+                    title: 'Searching',
+                    start: '2016-01-16'
+                }
 				]
 			});
 			
 		});
 	</script>
-        <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">New Event</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+<div id="footer">   
+            <center><p class="loginFoot">Created by <strong>Jae</strong>, <strong>Bryce</strong> and <strong>Michael</strong></p></center>
+        </div>
+	</body>
 
-  </div>
-</div>
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
