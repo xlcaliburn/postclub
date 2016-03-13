@@ -861,8 +861,7 @@ label {
 
 .matchProfiles {
 	width: 19.7%;
-	margin: 0;
-padding: 0;
 }
 .matchProfiles:hover {
 	opacity: 0.3;
+}
