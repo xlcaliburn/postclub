@@ -160,7 +160,7 @@
 
 							<div class="modal-footer">
 								<a href="#tab1" data-toggle="tab" class="pull-left btn btn-default">< Prev</a>
-								<a href="indexQueue.html" class="pull-right btn btn-primary">Submit</a>
+								<a href="indexQueue.php" class="pull-right btn btn-primary">Submit</a>
 							</div>
 						</div>
 					</div>

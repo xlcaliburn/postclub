@@ -50,43 +50,7 @@
 	</head>
 	<body>
 	
-	<!-- Start Header
-	================================================== -->
-	<header id="header" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-	  <div class="container-fluid" id="navfluid">
-		<div class="navbar-header">
-		  <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <!-- Your Logo -->
-		  <a href="" class="navbar-brand">Post<span>Club</span></a>
-		</div>
-		<!-- Start Navigation -->
-		<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-		  <ul class="nav navbar-nav">
-			<li>
-			  <a href="#face">Calendar</a>
-			</li>
-			<li>
-			  <a href="#features">Information</a>
-			</li>
-			<li>
-			  <a href="profile.html">Preferences</a>
-			</li>
-			<li>
-			  <a href="login.html">Signout</a>
-			</li>
-		  </ul>
-		</nav>
-	  </div>
-	</header>
-	<!-- ==================================================
-	End Header -->
-	
-   
+	<?php include "header.php"; ?>
         
 	<!-- Start INTRO Section
 	================================================== -->
