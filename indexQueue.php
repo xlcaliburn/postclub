@@ -49,7 +49,7 @@
 		<link rel="shortcut icon" href="../assets/favicon.png">
 
 		
-	<script>setTimeout(function(){window.location.href='indexEventGroup.html'},8000);</script>
+	<script>setTimeout(function(){window.location.href='matchResults.php'},8000);</script>
 
 	</head>
 	<body>
@@ -68,7 +68,7 @@
                         <h3 class="lobbyD">Time Range: <br/><span>15:00 - 19:00</span></h3>
                         <h3 class="lobbyD">Search: <br/><span>5km</span></h3>
                         <h3 class="lobbyD">Category: <br/><span>Outdoor - Active</span></h3>
-                        <h2 class="lobbyStatus">Searching . . .</h2>
+                        <h2 class="lobbyStatus">Searching<span id="time"> . . .</span></h2>
                     </div>
                 </div>
 				<div class="col-md-6 col-sm-12 col-xs-12">
@@ -77,6 +77,34 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+	function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    var dots;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        // minutes = minutes < 10 ? "0" + minutes : minutes;
+        // seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        if (seconds % 3 == 0) {dots = ".";}
+        else if (seconds % 3 == 1) {dots = ". .";}
+        else if (seconds %3 == 2) {dots = ". . .";}
+        display.text(dots);
+
+        timer++;
+    }, 1000);
+}
+
+jQuery(function ($) {
+    var fiveMinutes = 0,
+    display = $('#time');
+    startTimer(fiveMinutes, display);
+});
+
+</script>
 
 	<script>
 		$(document).ready(function() {
